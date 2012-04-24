@@ -1,0 +1,17 @@
+<h3>Tweets for <em>"{{ query }}"</em></h3>
+
+{% for result in results %}
+	<div class="result">
+
+		<img src="{{ result.image }}" align="left"/>
+
+		<strong>{{ result.username }} {{ result.created|date('@ g:i a') }} </strong>
+		<br> {{ result.text }}
+
+	</div>
+{% endfor %}
+{% for FLICKRresult in FLICKRresults %}
+	<div class="result">
+		<img src="http://farm{{ FLICKRresult.farm }}.static.flickr.com/{{ FLICKRresult.server_id }}/{{ FLICKRresult.photo_id }}_{{ FLICKRresult.secret }}.jpg" height="80" width="80" />
+	</div>
+{% endfor %}

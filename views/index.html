@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<link rel='stylesheet' href='/css/style.css' />
+	</head>
+
+	<body>
+		<h2>{{ title }}</h2>
+
+		<form action="/search/" method="GET" id="searchForm" >
+
+			<input type="text" name="query" id="query" placeholder="Search" />
+
+			<input type="submit" value="Search"/>
+
+		</form>
+
+		<div id="results"></div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="/js/search.js" ></script>
+	</body>
+</html>

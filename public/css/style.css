@@ -1,0 +1,22 @@
+body {
+	padding: 10px;
+	font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background-color: #c2f384;
+	background-image: url(/images/backgroundtop.gif);
+	background-repeat: repeat-x;
+}
+
+a {
+	color: #00B7FF;
+}
+
+.result {
+	padding: 5px;
+	margin: 5px;
+	clear: left;
+	border: solid 1px #ccc;
+}
+
+.result img {
+	padding-right: 10px;
+}
