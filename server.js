@@ -45,5 +45,5 @@ app.configure('production', function(){
 app.get('/', routes.index);
 app.get('/search/', routes.search);
 
-app.listen(8002);
+app.listen(process.env.C9_PORT);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
