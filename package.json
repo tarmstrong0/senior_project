@@ -1,0 +1,13 @@
+{
+  "name": "tarmstrong",
+  "version": "0.0.1",
+  "main": "./server.js",
+  "engines": {
+    "node": "0.6.x",
+    "npm":  "1.1.x"
+  },
+  "dependencies": {
+    "express": "2.5.9",
+    "swig":"0.11.2"
+  }
+}
